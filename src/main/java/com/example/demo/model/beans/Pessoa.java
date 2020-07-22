@@ -16,7 +16,7 @@ import javax.persistence.Table;
     @Id
     @GeneratedValue
     private Long id;
-    private String nome;
+    private String name;
 
     @OneToMany(mappedBy = "pessoa", cascade = CascadeType.ALL)
     private List<Veiculo> veiculos;
@@ -37,11 +37,11 @@ import javax.persistence.Table;
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 }
